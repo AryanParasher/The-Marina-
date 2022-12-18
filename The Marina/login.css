@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sign-in{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.sign-in .image{
+    position: relative;
+    width: 50%;
+    min-height: 100vh;
+}
+
+.sign-in .image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sign-in .sign-in-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(168, 168, 168);
+}
+
+.sign-in .sign-in-form .form-content{
+    width: 50%;
+}
+
+.sign-in .sign-in-form .form-content h2{
+    text-transform: uppercase;
+    font-family: 'ButlerRegular';
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    letter-spacing: 1px;
+    border-bottom: 4px solid rgb(255, 0, 0) ;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.sign-in .sign-in-form .form-content h2 span{
+    color: red;
+}
+
+.sign-in .sign-in-form .form-content .input-box{
+    margin-bottom: 20px;
+}
+
+.sign-in .sign-in-form .form-content .input-box span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: black;
+    letter-spacing: 1px;
+}   
+
+
+.sign-in .sign-in-form .form-content .input-box input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: transparent;
+    border-radius: 30px;
+}
+
+.sign-in .sign-in-form .form-content .input-box input[type="submit"]{
+    color: white;
+    background: rgb(107, 32, 32);
+    border: none;
+    font-weight: 600;
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+.sign-in .sign-in-form .form-content .input-box input[type="submit"]:hover{
+    background: black;
+}
+
+.sign-in .sign-in-form .form-content .remember{
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+.sign-in .sign-in-form .form-content .input-box p{
+    color: black;
+    letter-spacing: 1px;
+}
+
+.sign-in .sign-in-form .form-content .input-box p a{
+    color: red;
+    font-weight: 1000;
+}
+
+.sign-in .sign-in-form .form-content .input-box p a:hover{
+    color: purple;
+}
+
+.sign-in .sign-in-form .form-content h3{
+    color: black;
+    text-align: center;
+    margin: 80px 0 10px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.sci{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.sci li button{
+    background: transparent;
+    border: none;
+    font-size: 1.7rem;
+}
+
+.sci li button:hover{
+    color: red;
+}
+
+@media screen and (max-width: 680px) {
+
+    .sign-in .image{
+        position: absolute;
+        width: 100%;
+    }
+
+    .sign-in-form{
+        width: inherit;
+    }
+
+    .sign-in-form .form-content{
+        width: 100%;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+
+    
+    
+}

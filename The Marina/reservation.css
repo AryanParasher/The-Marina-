@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.booking-section{
+    background: url(https://www.matchingfoodandwine.com/files/blogattachments/orange-wines-in-georgia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+    
+}
+
+.reservation{
+    margin-bottom: 2rem;
+}
+
+.reservation h2{
+    color: white;
+    font-family: 'ButlerRegular';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;  
+    text-align: center;
+    transition: all 0.3s linear;
+    letter-spacing: 0.1rem;
+}
+
+.reservation span{
+    color: red;
+}
+
+.reservation h2:hover{
+    transition: transform 2s ease,color 2s ease;
+    transform: translateY(-10px);
+    color: tomato;
+}
+
+.reservation-form{
+    width: 50%;
+    margin-bottom: 3rem;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s linear;
+}
+
+input{
+    padding: 12px;
+    border-radius: 10px;
+}
+
+label{
+    color: white;
+}
+
+button{
+    background-color: rgb(116, 0, 0);
+    color: white;  
+}
+
+button:hover{
+    background: transparent;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s linear;
+}
+
+.col-12{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+button{
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;  
+}
+
+@media screen and (max-width: 1300px){
+    .reservation-form {
+        width: 70%;
+    }
+    
+}
+
+
+/* .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+
+
